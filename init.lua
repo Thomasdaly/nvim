@@ -13,6 +13,8 @@ vim.opt.rtp:prepend(lazypath)
 vim.api.nvim_set_option("clipboard", "unnamed")
 require("vim-options")
 vim.opt.clipboard = 'unnamedplus'
+vim.opt.colorcolumn = ""
+
 require("lazy").setup({
 	spec = {
 		{ import = "plugins" },
