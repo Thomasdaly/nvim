@@ -12,9 +12,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 vim.api.nvim_set_option("clipboard", "unnamed")
 require("vim-options")
+vim.cmd("colorscheme tokyonight")
 vim.opt.clipboard = "unnamedplus"
 vim.opt.colorcolumn = ""
-
 require("lazy").setup({
 	spec = {
 		{ import = "plugins" },
