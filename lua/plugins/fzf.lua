@@ -11,5 +11,9 @@ return {
         vim.keymap.set("n", "<c-F>", function()
             require('fzf-lua').grep()
         end, { silent = true, desc = "Live grep - fzf-lua" })
+        vim.keymap.set("n", "<c-O>", function()
+            require('fzf-lua').oldfiles()
+        end, { silent = true, desc = "Recent files - fzf-lua" })
+
     end
 }
